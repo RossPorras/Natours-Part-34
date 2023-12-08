@@ -1,0 +1,26 @@
+Using live sass compiler by Glenn Marks and the live server from Ritwick Dey.
+
+Configure VS Code
+
+GOTO File - Preferences - settings
+
+edit - settings-json
+add the following:
+
+
+"liveSassCompile.settings.autoprefix": [],
+"liveSassCompile.settings.excludeList": ["/**/node_modules/**", "/.vscode/**"],
+"liveSassCompile.settings.generateMap": false,
+"liveSassCompile.settings.showOutputWindowOn": "Error",
+"liveSassCompile.settings.formats": [
+		{
+			"format": "expanded",
+			"extensionName": ".css",
+			"savePath": "~/../css"
+		},
+		{
+			"format": "compressed",
+			"extensionName": ".min.css",
+			"savePath": "~/../css"
+		}
+	],
